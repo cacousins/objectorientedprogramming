@@ -12,9 +12,13 @@ public class StaticDemo {
 
     public static void main(String[] args) {
         StaticDemo student1 = new StaticDemo();
-     
-        
-
+        student1.printStudent("Layne");
+        student1.printStudent("hawke");
+        student1.printStudent("James");
+        student1.printStudent("Jorge");
+        student1.printStudent("Carissa");
+        student1.printStudent("Nibbs");
+        student1.printStudent("Satan Brown");
     }
 
     public void printStudent(String name) {
@@ -22,7 +26,7 @@ public class StaticDemo {
         ++studentID;
         System.out.println("===================================");
         System.out.println("Student name is : " + this.name);
-        System.out.println("Student ID is : " + this.studentID++);
+        System.out.println("Student ID is : " + this.studentID);
         System.out.println("===================================");
     }
 

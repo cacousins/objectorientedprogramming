@@ -4,14 +4,14 @@ import java.util.Scanner;
 
 
 public class TestCircle {
-    public static void main(String[] args) {
-        /*Circle myFirstCircle = new Circle();
-        myFirstCircle.describeCircle();*/
+    public static void main(String[] args) {               
+        //for default constructor
+        Circle circle = new Circle(); 
+        circle.setRadius(0);         
+        circle.describeCircle();
+      
         
-        //create a second circle
-        Circle mySecondCircle = new Circle(19.6);
-        mySecondCircle.describeCircle();
-        
+      
     }
 
 }
