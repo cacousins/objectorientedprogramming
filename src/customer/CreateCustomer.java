@@ -5,6 +5,8 @@
  */
 package customer;
 
+import java.util.Scanner;
+
 /**
  *
  * @author cacousins
@@ -12,11 +14,23 @@ package customer;
 public class CreateCustomer {
 
     public static void main(String[] args) {
-        Customer customer1 = new Customer("Colin Cousins", "cacousins@gmail.com");
+        Scanner input = new Scanner(System.in);
+        String name, email;
+        System.out.println("Enter name : ");
+        name = input.nextLine();
+        
+        System.out.println("Enter email : ");
+        email = input.nextLine();
+        
+        
+        
+        Customer customer1 = new Customer(name, email);
         Customer customer2 = new Customer("James Curtney", "jcurtney@gmail.com");
         Customer customer3 = new Customer("Richards Carissa", "rcarissa@gmail.com");
         Customer customer4 = new Customer("Mike Jordan", "mjordan@gmail.com");
 
+        
+          Customer[] customer = new Customer[6];
         /*System.out.println(customer1.toString());
         System.out.println(customer2.toString());
         System.out.println(customer3.toString());*/

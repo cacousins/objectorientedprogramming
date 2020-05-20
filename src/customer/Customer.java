@@ -49,7 +49,7 @@ public class Customer {
         String initial = "";
         initial += this.name.charAt(0);
         //initial = initial + name.charAt(0);
-        return (initial + id);
+        return initial + id;
 
         //Colin Cousins - C+ID
         //String - an array characters - index 0
