@@ -7,7 +7,8 @@ package inheritancepractice;
 public class Main {
 
     public static void main(String[] args) {
-        Animal animal = new Animal("DOG");
+        Animal animal = new Animal("g");
+        
         //System.out.println(animal);
 
         Dog dog = new Dog("George", "Rottweiler");
