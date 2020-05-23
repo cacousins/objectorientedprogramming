@@ -14,9 +14,14 @@ public class Customer {
     public Customer(String name, String email) {
         this.name = name;
         this.email = email;
-        this.id++;
+        Customer.id++;        
         this.custID = generateCustID(this.name); //M100000;
 
+    }
+
+    //mutator methods
+    public void setCustID(String custID) {
+        this.custID = generateCustID(name); //changes
     }
 
     public void setName(String name) {
@@ -46,20 +51,15 @@ public class Customer {
     Returns:           String    
      */
     private String generateCustID(String name) {
+        this.name = name;
         String initial = "";
         initial += this.name.charAt(0);
-        //initial = initial + name.charAt(0);
         return initial + id;
-
-        //Colin Cousins - C+ID
-        //String - an array characters - index 0
     }
 
     @Override
     public String toString() {
         return "Customer{" + "custID=" + this.custID + ", name=" + this.name + ", email=" + this.email + '}';
     }
-    
-    
 
 }
